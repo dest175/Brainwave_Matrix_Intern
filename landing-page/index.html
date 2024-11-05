@@ -1,0 +1,265 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PixelSolutions - Digital Marketing Agency</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://unpkg.com/lucide@latest"></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="logo">
+          <i data-lucide="palette"></i>
+          <i data-lucide="brush" class="brush-icon"></i>
+          <span>PixelSolutions</span>
+        </div>
+        <div class="nav-links">
+          <a href="#home">Home</a>
+          <a href="#services">Services</a>
+          <a href="#courses">Courses</a>
+          <a href="#careers">Careers</a>
+          <a href="#about">About</a>
+          <a href="#contact" class="contact-btn">Contact</a>
+          <button id="theme-toggle" aria-label="Toggle theme">
+            <i data-lucide="sun" class="sun-icon"></i>
+            <i data-lucide="moon" class="moon-icon"></i>
+          </button>
+        </div>
+        <button class="mobile-menu-btn">
+          <i data-lucide="menu"></i>
+        </button>
+      </div>
+    </nav>
+
+    <main>
+      <!-- Hero Section -->
+      <section id="home" class="hero">
+        <h1>Transform Your Digital Presence</h1>
+        <p>
+          We help businesses grow through creative design, strategic marketing,
+          and innovative branding solutions.
+        </p>
+        <div class="hero-buttons">
+          <a href="#contact" class="primary-btn">
+            Get Started
+            <i data-lucide="arrow-right"></i>
+          </a>
+          <a href="#services" class="secondary-btn">Learn More</a>
+        </div>
+      </section>
+
+      <!-- Services Section -->
+      <section id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="services-grid">
+          <div class="service-card">
+            <i data-lucide="monitor"></i>
+            <h3>Web Design</h3>
+            <p>Custom websites that engage visitors and drive conversions.</p>
+          </div>
+          <div class="service-card">
+            <i data-lucide="paintbrush"></i>
+            <h3>Graphic Design</h3>
+            <p>Eye-catching visuals that tell your brand's story.</p>
+          </div>
+          <div class="service-card">
+            <i data-lucide="palette"></i>
+            <h3>Branding</h3>
+            <p>Comprehensive brand identity development and strategy.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Courses Section -->
+      <section id="courses" class="courses">
+        <div class="section-header">
+          <h2>Professional Courses</h2>
+          <h3 class="course-description">
+            Enhance your skills with our industry-leading courses taught by
+            experienced professionals.
+          </h3>
+        </div>
+        <div class="courses-grid">
+          <div class="course-card">
+            <i data-lucide="code"></i>
+            <h3>Web Development Mastery</h3>
+            <p>
+              Learn modern web development from basics to advanced concepts.
+            </p>
+            <div class="course-details">
+              <p><strong>Duration:</strong> 12 weeks</p>
+              <p><strong>Level:</strong> Beginner to Advanced</p>
+            </div>
+            <button class="course-btn">Learn More</button>
+          </div>
+          <div class="course-card">
+            <i data-lucide="palette"></i>
+            <h3>Graphic Design Fundamentals</h3>
+            <p>Master the principles of design and industry-standard tools.</p>
+            <div class="course-details">
+              <p><strong>Duration:</strong> 8 weeks</p>
+              <p><strong>Level:</strong> All Levels</p>
+            </div>
+            <button class="course-btn">Learn More</button>
+          </div>
+          <div class="course-card">
+            <i data-lucide="megaphone"></i>
+            <h3>Brand Strategy & Identity</h3>
+            <p>
+              Create compelling brand identities that resonate with audiences.
+            </p>
+            <div class="course-details">
+              <p><strong>Duration:</strong> 6 weeks</p>
+              <p><strong>Level:</strong> Intermediate</p>
+            </div>
+            <button class="course-btn">Learn More</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Careers Section -->
+      <section id="careers" class="careers">
+        <h2>Join Our Team</h2>
+        <h3 class="joining-description">
+          Be part of a dynamic team that's shaping the future of digital
+          marketing and design.
+        </h3>
+        <div class="careers-grid">
+          <div class="career-card">
+            <i data-lucide="building"></i>
+            <h3>Modern Workspace</h3>
+            <p>Flexible work environment with state-of-the-art facilities.</p>
+          </div>
+          <div class="career-card">
+            <i data-lucide="trophy"></i>
+            <h3>Growth Opportunities</h3>
+            <p>Clear career progression and professional development.</p>
+          </div>
+          <div class="career-card">
+            <i data-lucide="coffee"></i>
+            <h3>Great Culture</h3>
+            <p>Collaborative environment with work-life balance.</p>
+          </div>
+        </div>
+        <a href="#contact" class="primary-btn" id="join">
+          Join Our Team
+          <i data-lucide="briefcase"></i>
+        </a>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="contact">
+          <h2>
+            <i data-lucide="mail"><h2></h2></i>
+            Get in Touch
+        </h2>
+        <h3 class="ss">
+          Whether you're looking to join our team or need our services, we'd
+          love to hear from you.
+        </h3>
+        <form class="contact-form">
+          <input type="text" placeholder="Your Name" required />
+          <input type="email" placeholder="Your Email" required />
+          <select required>
+            <option value="">I'm interested in...</option>
+            <option value="services">Getting Services</option>
+            <option value="career">Joining the Team</option>
+            <option value="course">Taking a Course</option>
+          </select>
+          <textarea placeholder="Your Message" rows="4" required></textarea>
+          <button type="submit" class="primary-btn">Send Message</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <div class="logo">
+              <i data-lucide="palette"></i>
+              <i data-lucide="brush" class="brush-icon"></i>
+              <span>PixelSolutions</span>
+            </div>
+            <p>
+              Transform your digital presence with our expert services and
+              opportunities.
+            </p>
+          </div>
+          <div class="footer-links">
+            <h3>Services</h3>
+            <ul>
+              <li><a href="#services">Web Design</a></li>
+              <li><a href="#services">Graphic Design</a></li>
+              <li><a href="#services">Branding</a></li>
+            </ul>
+          </div>
+          <div class="footer-links">
+            <h3>Company</h3>
+            <ul>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#careers">Careers</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-contact">
+            <h3>Contact</h3>
+            <ul>
+              <li>contact@pixelsolutions.com</li>
+              <li>+1 (555) 123-4567</li>
+              <li>123 Digital Street, Creative City</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>
+            &copy; <span id="year"></span> PixelSolutions. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Initialize Lucide icons
+      lucide.createIcons();
+
+      // Mobile menu toggle
+      const mobileMenuBtn = document.querySelector(".mobile-menu-btn");
+      const navLinks = document.querySelector(".nav-links");
+      mobileMenuBtn.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+        const icon = mobileMenuBtn.querySelector("i");
+        icon.setAttribute(
+          "data-lucide",
+          icon.getAttribute("data-lucide") === "menu" ? "x" : "menu"
+        );
+        lucide.createIcons();
+      });
+
+      // Theme toggle
+      const themeToggle = document.getElementById("theme-toggle");
+      const prefersDark = window.matchMedia("(prefers-color-scheme: dark)");
+
+      function setTheme(isDark) {
+        document.documentElement.classList.toggle("dark", isDark);
+        localStorage.setItem("dark-theme", isDark);
+      }
+
+      // Initialize theme
+      const savedTheme = localStorage.getItem("dark-theme");
+      if (savedTheme !== null) {
+        setTheme(savedTheme === "true");
+      } else {
+        setTheme(prefersDark.matches);
+      }
+
+      themeToggle.addEventListener("click", () => {
+        setTheme(!document.documentElement.classList.contains("dark"));
+      });
+
+      // Update year in footer
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
