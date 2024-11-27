@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-translate="pageTitle">Pixel Solutions</title>
+  <link rel="stylesheet" href="./styles/main.css">
+  <script src="https://cdn.jsdelivr.net/npm/lucide@latest/dist/umd/lucide.min.js"></script>
+</head>
+<body>
+  <!-- Encabezado -->
+  <header class="header">
+    <div class="logo">
+      <i data-lucide="palette" class="palette-icon"></i>
+      <i data-lucide="brush" class="brush-icon"></i>
+      <span data-translate="brandTitle">Pixel Solutions</span>
+    </div>
+    <nav class="main-menu">
+      <a href="index.html" class="nav-item" data-translate="menuAll">Todo</a>
+      <a href="/ecommerce_task2/pages/list.html" class="nav-item" data-translate="menuList">Lista</a>
+      <a href="/ecommerce_task2/pages/offers.html" class="nav-item" data-translate="menuDeals">Ofertas</a>
+    </nav>
+    <div class="cart-container">
+      <button id="cart-button" class="cart-icon">
+        🛒 <span id="cart-count">0</span>
+      </button>
+      <div id="cart-dropdown" class="cart-dropdown hidden">
+        <ul id="cart-items"></ul>
+        <button id="checkout-button" class="checkout-button" data-translate="checkoutButton">
+          Proceed to Checkout
+        </button>
+      </div>
+    </div>
+    <button id="language-toggle" class="language">EN</button>
+  </header>
+
+  <!-- Galería de productos -->
+  <section class="product-gallery">
+    <h2 data-translate="productGalleryTitle">Our Products</h2>
+    <div class="product-grid">
+      <!-- Producto 1 -->
+      <div class="product-card" data-id="1" data-price="25.99">
+        <img src="/ecommerce_task2/assets/17320160676293.jpg" alt="Product 1">
+        <h3 data-translate="product1Name">Product 1</h3>
+        <p data-translate="product1Description">Short description of the product.</p>
+        <p class="product-price">$25.99</p>
+        <button data-id="1" class="add-to-cart" data-translate="addToCart">Add to Cart</button>
+      </div>
+
+      <!-- Producto 2 -->
+      <div class="product-card"data-id="2" data-price="40.00">
+        <img src="/ecommerce_task2/assets/4.jpg" alt="Product 2">
+        <h3 data-translate="product2Name">Product 2</h3>
+        <p data-translate="product2Description">Short description of the product.</p>
+        <p class="product-price">$40.00</p>
+        <button data-id="2" class="add-to-cart" data-translate="addToCart">Add to Cart</button>
+      </div>
+
+      <!-- Producto 3 -->
+      <div class="product-card"data-id="3" data-price="18.50">
+        <img src="/ecommerce_task2/assets/como-vender-productos-de-skincare-en-internet.jpg" alt="Product 3">
+        <h3 data-translate="product3Name">Product 3</h3>
+        <p data-translate="product3Description">Short description of the product.</p>
+        <p class="product-price">$18.50</p>
+        <button data-id="3" class="add-to-cart" data-translate="addToCart">Add to Cart</button>
+      </div>
+
+      <!-- Producto 4 -->
+      <div class="product-card"data-id="4" data-price="12.99">
+        <img src="/ecommerce_task2/assets/diet-coke.webp" alt="Product 4">
+        <h3 data-translate="product4Name">Product 4</h3>
+        <p data-translate="product4Description">Short description of the product.</p>
+        <p class="product-price">$12.99</p>
+        <button data-id="4" class="add-to-cart" data-translate="addToCart">Add to Cart</button>
+      </div>
+
+      <!-- Producto 5 -->
+      <div class="product-card"data-id="5" data-price="30.00">
+        <img src="/ecommerce_task2/assets/images.jpg" alt="Product 5">
+        <h3 data-translate="product5Name">Product 5</h3>
+        <p data-translate="product5Description">Short description of the product.</p>
+        <p class="product-price">$30.00</p>
+        <button data-id="5" class="add-to-cart" data-translate="addToCart">Add to Cart</button>
+      </div>
+
+      <!-- Producto 6 -->
+      <div class="product-card"data-id="6" data-price="22.49">
+        <img src="/ecommerce_task2/assets/producto-packaging-e1572738514178.jpg" alt="Product 6">
+        <h3 data-translate="product6Name">Product 6</h3>
+        <p data-translate="product6Description">Short description of the product.</p>
+        <p class="product-price">$22.49</p>
+        <button data-id="6" class="add-to-cart" data-translate="addToCart">Add to Cart</button>
+      </div>
+
+      <!-- Producto 7 -->
+      <div class="product-card"data-id="7" data-price="15.99">
+        <img src="./assets/producto1.webp" alt="Product 7">
+        <h3 data-translate="product7Name">Product 7</h3>
+        <p data-translate="product7Description">Short description of the product.</p>
+        <p class="product-price">$15.99</p>
+        <button data-id="7" class="add-to-cart" data-translate="addToCart">Add to Cart</button>
+      </div>
+
+      <!-- Producto 8 -->
+      <div class="product-card" data-id="8" data-price="45.00">
+        <img src="./assets/producto2.png" alt="Product 8">
+        <h3 data-translate="product8Name">Product 8</h3>
+        <p data-translate="product8Description">Short description of the product.</p>
+        <p class="product-price">$45.00</p>
+        <button data-id="8" class="add-to-cart" data-translate="addToCart">Add to Cart</button>
+      </div>
+
+      <!-- Producto 9 -->
+      <div class="product-card"data-id="9" data-price="19.99">
+        <img src="./assets/productos-belleza.webp" alt="Product 9">
+        <h3 data-translate="product9Name">Product 9</h3>
+        <p data-translate="product9Description">Short description of the product.</p>
+        <p class="product-price">$19.99</p>
+        <button data-id="9" class="add-to-cart" data-translate="addToCart">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pie de página -->
+  <footer>
+    <p data-translate="footerText">Contact us, we are available nationwide.</p>
+  </footer>
+
+  <script src="/ecommerce_task2/main.js"></script>
+</body>
+</html>

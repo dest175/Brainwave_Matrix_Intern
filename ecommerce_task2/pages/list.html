@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-translate="pageTitle">Product List</title>
+  <link rel="stylesheet" href="/ecommerce_task2/styles/main.css">
+  <script src="https://cdn.jsdelivr.net/npm/lucide@latest/dist/umd/lucide.min.js"></script>
+</head>
+<body>
+  <!-- Encabezado -->
+  <header class="header">
+    <div class="logo">
+      <i data-lucide="palette" class="palette-icon"></i>
+      <i data-lucide="brush" class="brush-icon"></i>
+      <span data-translate="brandTitle">Pixel Solutions</span>
+    </div>
+    <nav class="main-menu">
+      <a href="/ecommerce_task2/index.html" class="nav-item" data-translate="menuAll">Todo</a>
+      <a href="./list.html" class="nav-item" data-translate="menuList">Lista</a>
+      <a href="./offers.html" class="nav-item" data-translate="menuDeals">Ofertas</a>
+    </nav>
+    <div class="cart-container">
+      <button id="cart-button" class="cart-icon">
+        🛒 <span id="cart-count">0</span>
+      </button>
+      <div id="cart-dropdown" class="cart-dropdown hidden">
+        <ul id="cart-items"></ul>
+        <button id="checkout-button" class="checkout-button" data-translate="checkoutButton">
+          Proceed to Checkout
+        </button>
+      </div>
+    </div>
+    <button id="language-toggle" class="language">EN</button>
+  </header>
+
+  <!-- Productos organizados por categorías -->
+  <main>
+    <h1 data-translate="productListTitle">Products by Category</h1>
+
+    <!-- Categoría Tecnología -->
+    <section class="category">
+      <h2>Tecnología</h2>
+      <div class="product-grid">
+        <div class="product-card" data-id="10" data-price="100">
+          <img src="/ecommerce_task2/assets/17320160676293.jpg" alt="Product 1">
+          <h3>Product 10</h3>
+          <p>Descripción breve del producto.</p>
+          <p class="product-price">$100.00</p>
+          <button data-id="1" class="add-to-cart" data-translate="addToCart">Add to Cart</button>
+        </div>
+        <div class="product-card"data-id="11" data-price="110">
+          <img src="/ecommerce_task2/assets/4.jpg" alt="Product 8">
+          <h3>Product 11</h3>
+          <p>Descripción breve del producto.</p>
+          <p class="product-price">$110.00</p>
+          <button data-id="8" class="add-to-cart" data-translate="addToCart">Add to Cart</button>
+        </div>
+        <div class="product-card" data-id="12" data-price="150">
+          <img src="/ecommerce_task2/assets/como-vender-productos-de-skincare-en-internet.jpg" alt="Product 2">
+          <h3>Product 12</h3>
+          <p>Descripción breve del producto.</p>
+          <p class="product-price">$150.00</p>
+          <button data-id="2" class="add-to-cart" data-translate="addToCart">Add to Cart</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Categoría Hogar -->
+    <section class="category">
+      <h2>Cosas para el Hogar</h2>
+      <div class="product-grid">
+        <div class="product-card" data-id="13" data-price="80">
+          <img src="/ecommerce_task2/assets/diet-coke.webp" alt="Product 3">
+          <h3>Product 13</h3>
+          <p>Descripción breve del producto.</p>
+          <p class="product-price">$80.00</p>
+          <button data-id="3" class="add-to-cart" data-translate="addToCart">Add to Cart</button>
+        </div>
+        <div class="product-card"data-id="14" data-price="110">
+          <img src="/ecommerce_task2/assets/images.jpg" alt="Product 8">
+          <h3>Product 14</h3>
+          <p>Descripción breve del producto.</p>
+          <p class="product-price">$110.00</p>
+          <button data-id="8" class="add-to-cart" data-translate="addToCart">Add to Cart</button>
+        </div>
+        <div class="product-card" data-id="15" data-price="120">
+          <img src="/ecommerce_task2/assets/producto-packaging-e1572738514178.jpg" alt="Product 4">
+          <h3>Product 15</h3>
+          <p>Descripción breve del producto.</p>
+          <p class="product-price">$120.00</p>
+          <button data-id="4" class="add-to-cart" data-translate="addToCart">Add to Cart</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Categoría Herramientas -->
+    <section class="category">
+      <h2>Herramientas</h2>
+      <div class="product-grid">
+        <div class="product-card" data-id="16" data-price="90">
+          <img src="/ecommerce_task2/assets/producto1.webp" alt="Product 7">
+          <h3>Product 16</h3>
+          <p>Descripción breve del producto.</p>
+          <p class="product-price">$90.00</p>
+          <button data-id="7" class="add-to-cart" data-translate="addToCart">Add to Cart</button>
+        </div>
+        <div class="product-card" data-id="17" data-price="110">
+          <img src="/ecommerce_task2/assets/producto2.png" alt="Product 8">
+          <h3>Product 17</h3>
+          <p>Descripción breve del producto.</p>
+          <p class="product-price">$110.00</p>
+          <button data-id="8" class="add-to-cart" data-translate="addToCart">Add to Cart</button>
+        </div>
+        <div class="product-card" data-id="18" data-price="110">
+          <img src="/ecommerce_task2/assets/productos-belleza.webp" alt="Product 8">
+          <h3>Product 18</h3>
+          <p>Descripción breve del producto.</p>
+          <p class="product-price">$110.00</p>
+          <button data-id="8" class="add-to-cart" data-translate="addToCart">Add to Cart</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p data-translate="footerText">Contact us, we are available nationwide.</p>
+  </footer>
+
+  <script src="/ecommerce_task2/main.js"></script>
+</body>
+</html>

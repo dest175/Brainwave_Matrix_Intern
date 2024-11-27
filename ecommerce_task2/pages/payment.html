@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-translate="pageTitle">Payment Form</title>
+  <link rel="stylesheet" href="/ecommerce_task2/styles/main.css">
+  <script src="https://cdn.jsdelivr.net/npm/lucide@latest/dist/umd/lucide.min.js"></script>
+</head>
+<body>
+  <!-- Encabezado -->
+  <header class="header">
+    <div class="logo">
+      <i data-lucide="palette" class="palette-icon"></i>
+      <i data-lucide="brush" class="brush-icon"></i>
+      <span data-translate="brandTitle">Pixel Solutions</span>
+    </div>
+    <nav class="main-menu">
+      <a href="/ecommerce_task2/index.html" class="nav-item" data-translate="menuAll">Todo</a>
+      <a href="./list.html" class="nav-item" data-translate="menuList">Lista</a>
+      <a href="./offers.html" class="nav-item" data-translate="menuDeals">Ofertas</a>
+    </nav>
+  </header>
+
+  <!-- Resumen del Carrito -->
+  <section class="cart-summary">
+    <h2 data-translate="cartSummaryTitle">Cart Summary</h2>
+    <ul id="cart-summary-list"></ul>
+    <p id="total-amount" data-translate="totalAmount">Total: $0.00</p>
+    <button id="clear-cart-button" class="clear-cart">Clear Cart</button>
+  </section>
+
+  <!-- Formulario de Pago -->
+  <main class="payment-form-container">
+    <h1 data-translate="paymentTitle">Payment Details</h1>
+    <form id="payment-form">
+      <div class="form-group">
+        <label for="full-name" data-translate="labelFullName">Full Name</label>
+        <input type="text" id="full-name" name="full-name" required placeholder="John Doe">
+      </div>
+      <div class="form-group">
+        <label for="email" data-translate="labelEmail">Email</label>
+        <input type="email" id="email" name="email" required placeholder="example@example.com">
+      </div>
+      <div class="form-group">
+        <label for="address" data-translate="labelAddress">Shipping Address</label>
+        <input type="text" id="address" name="address" required placeholder="123 Main Street">
+      </div>
+      <div class="form-group">
+        <label for="card-number" data-translate="labelCardNumber">Card Number</label>
+        <input type="text" id="card-number" name="card-number" required placeholder="1234 5678 9012 3456">
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="expiry-date" data-translate="labelExpiryDate">Expiry Date</label>
+          <input type="text" id="expiry-date" name="expiry-date" required placeholder="MM/YY">
+        </div>
+        <div class="form-group">
+          <label for="cvv" data-translate="labelCVV">CVV</label>
+          <input type="text" id="cvv" name="cvv" required placeholder="123">
+        </div>
+      </div>
+      <button type="submit" class="submit-button" data-translate="buttonPay">Process Payment</button>
+    </form>
+  </main>
+
+  <footer>
+    <p data-translate="footerText">Contact us, we are available nationwide.</p>
+  </footer>
+
+  <script src="/ecommerce_task2/main.js"></script>
+  <script>
+    // Mostrar productos del carrito
+  document.addEventListener('DOMContentLoaded', () => {
+  const cartSummaryList = document.getElementById('cart-summary-list');
+  const totalAmount = document.getElementById('total-amount');
+  const clearCartButton = document.getElementById('clear-cart-button');
+  let cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+
+  function displayCartItems() {
+    cartSummaryList.innerHTML = '';
+    let total = 0;
+
+    cartItems.forEach((item) => {
+      const listItem = document.createElement('li');
+      listItem.textContent = `${item.name} - $${item.price.toFixed(2)}`;
+      cartSummaryList.appendChild(listItem);
+      total += item.price;
+    });
+
+    totalAmount.textContent = `Total: $${total.toFixed(2)}`;
+  }
+
+  // Limpiar carrito
+  clearCartButton.addEventListener('click', () => {
+    cartItems = [];
+    localStorage.setItem('cartItems', JSON.stringify(cartItems));
+    displayCartItems();
+  });
+
+  displayCartItems();
+});
+  </script>
+</body>
+</html>

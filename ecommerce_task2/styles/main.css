@@ -1,0 +1,477 @@
+/* Nueva Barra de Navegación */
+.header {
+   background: linear-gradient(90deg, #6a11cb, #2575fc);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem; /* Más delgada */
+ ; /* Contraste oscuro */
+  color: white;
+}
+
+.main-menu {
+   background: linear-gradient(90deg, #6a11cb, #2575fc);
+  display: flex;
+  gap: 1.5rem; /* Espaciado entre los botones */
+}
+
+.nav-item {
+   background: linear-gradient(90deg, #6a11cb, #2575fc);
+  text-decoration: none;
+  color: white;
+  font-size: 0.9rem; /* Tamaño más pequeño */
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-item:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Efecto hover */
+}
+
+.language {
+   background: linear-gradient(90deg, #6a11cb, #2575fc);
+  border: 1px solid white;
+  color: white;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.language:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.cart-container {
+  position: relative;
+  background: linear-gradient(90deg, #6a11cb, #2575fc);
+}
+
+.cart-icon {
+   background: linear-gradient(90deg, #6a11cb, #2575fc);
+  border: none;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.cart-icon span {
+  background: red;
+  color: white;
+  border-radius: 50%;
+  padding: 0.2rem 0.5rem;
+  margin-left: 0.5rem;
+  font-size: 0.8rem;
+}
+
+/* Productos: Galería */
+.product-gallery {
+  padding: 2rem;
+  background: white;
+}
+
+.product-grid {
+  background: linear-gradient(90deg, #6a11cb, #2575fc);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Tres columnas */
+  gap: 1rem; /* Espaciado entre columnas */
+}
+
+.product-card {
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px); /* Efecto de elevación */
+}
+
+.product-card img {
+  max-width: 100%;
+  height: 200px; /* Altura fija para todas las imágenes */
+  object-fit: cover; /* Asegura que las imágenes mantengan proporción */
+  border-radius: 5px;
+  margin-bottom: 0.5rem;
+}
+
+.product-card h3 {
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.product-card p {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.add-to-cart {
+   background: linear-gradient(90deg, #6a11cb, #2575fc);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.add-to-cart:hover {
+  background: #3700b3;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+   background: linear-gradient(90deg, #6a11cb, #2575fc);
+  color: white;
+  font-size: 0.9rem;
+}
+
+/* Ajustes generales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f9f9f9;
+}
+
+h1, h2, h3, p {
+  margin: 0;
+}
+/* Estilo del contenedor */
+.payment-form-container {
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.payment-form-container h1 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+/* Estilo del formulario */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: #555;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-group input:focus {
+  border-color: #6200ea;
+  outline: none;
+}
+
+/* Fila de detalles de tarjeta */
+.form-row {
+  display: flex;
+  gap: 1rem;
+}
+
+.form-row .form-group {
+  flex: 1;
+}
+
+/* Botón de pago */
+.submit-button {
+  background: #6200ea;
+  color: white;
+  border: none;
+  padding: 0.8rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.submit-button:hover {
+  background: #3700b3;
+}
+.clear-cart-button {
+  background: red;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.clear-cart-button:hover {
+  background: darkred;
+}
+/* Botón para limpiar carrito */
+.clear-cart {
+  background: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  border-radius: 5px;
+}
+
+.clear-cart:hover {
+  background: #cc0000;
+}
+
+/* Total del carrito */
+.cart-total {
+  font-weight: bold;
+  margin-top: 1rem;
+}
+/* Contenedor del resumen del carrito */
+.cart-summary {
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  margin: 2rem auto;
+  max-width: 500px;
+}
+
+.cart-summary h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+#cart-summary-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 1rem;
+}
+
+#cart-summary-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+  font-size: 1rem;
+  color: #555;
+}
+
+#cart-summary-list li.cart-total {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+#total-amount {
+  text-align: right;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 1rem;
+  color: #333;
+}
+
+#clear-cart-button {
+  display: block;
+  width: 100%;
+  background: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 0.8rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+  margin-top: 1rem;
+}
+
+#clear-cart-button:hover {
+  background: #cc0000;
+}
+
+/* Alineación con el formulario */
+.payment-form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.payment-form-container .cart-summary {
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+/* Estilo para el contenedor del carrito */
+.cart-container {
+  position: relative; /* Posiciona el dropdown del carrito en relación con su contenedor */
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-left: auto; /* Asegura que el carrito se alinee hacia la derecha */
+  z-index: 1000; /* Asegura que el carrito esté encima de otros elementos */
+}
+
+/* Estilo para el botón del carrito */
+.cart-icon {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+/* Indicador de cantidad en el carrito */
+.cart-icon span {
+  background: red;
+  color: white;
+  border-radius: 50%;
+  padding: 0.2rem 0.5rem;
+  margin-left: 0.5rem;
+  font-size: 0.8rem;
+}
+
+/* Estilo para el dropdown del carrito */
+.cart-dropdown {
+  position: absolute;
+  top: 100%; /* Muestra el dropdown debajo del botón del carrito */
+  right: 0; /* Alinea el dropdown con el borde derecho del contenedor */
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 250px; /* Ancho del dropdown */
+  padding: 1rem;
+  z-index: 1000;
+}
+
+.cart-dropdown.hidden {
+  display: none; /* Oculta el dropdown cuando no se necesita */
+}
+
+/* Lista de elementos en el carrito */
+.cart-dropdown ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cart-dropdown ul li {
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+/* Botón de checkout */
+.checkout-button {
+  background: #6200ea;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.checkout-button:hover {
+  background: #3700b3;
+}
+
+/* Asegura que no interfiera con la navbar */
+.header .cart-container {
+  margin-right: 1rem; /* Agrega espacio entre el carrito y otros elementos de la navbar */
+}
+.category {
+  margin-bottom: 2rem;
+}
+
+.category h2 {
+  margin-bottom: 1rem;
+  color: #333;
+  font-size: 1.5rem;
+}
+/* Estilo para los títulos principales de las páginas */
+.main-title {
+  font-family: 'Arial', sans-serif; /* Fuente moderna y profesional */
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #2c3e50;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Sombra sutil para destacar */
+  margin-bottom: 1rem;
+  text-align: center;
+  padding: 0.5rem;
+}
+
+/* Estilo de la barra de navegación */
+.header {
+  background: linear-gradient(90deg, #6a11cb, #2575fc);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem; /* Más delgada */
+  color: white;
+}
+
+.main-menu {
+  background: linear-gradient(90deg, #6a11cb, #2575fc);
+  display: flex;
+  gap: 1.5rem; /* Espaciado entre los botones */
+}
+
+.nav-item {
+  background: linear-gradient(90deg, #6a11cb, #2575fc);
+  text-decoration: none;
+  color: white;
+  font-size: 1rem; /* Ajustado para una apariencia más profesional */
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-item:hover {
+  background-color: rgba(0, 0, 0, 0.1); /* Efecto hover */
+}
+
+/* Agregar estilo para los títulos de las secciones */
+section h1, section h2, section h3 {
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+  color: #2c3e50;
+  text-align: center;
+  margin: 2rem 0;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+

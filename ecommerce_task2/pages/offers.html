@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-translate="pageTitle">Special Offers</title>
+  <link rel="stylesheet" href="/ecommerce_task2/styles/offers.css">
+  <script src="https://cdn.jsdelivr.net/npm/lucide@latest/dist/umd/lucide.min.js"></script>
+</head>
+<body>
+  <!-- Encabezado -->
+  <header class="header">
+    <div class="logo">
+      <i data-lucide="palette" class="palette-icon"></i>
+      <i data-lucide="brush" class="brush-icon"></i>
+      <span data-translate="brandTitle">Pixel Solutions</span>
+    </div>
+    <nav class="main-menu">
+      <a href="/ecommerce_task2/index.html" class="nav-item" data-translate="menuAll">Todo</a>
+      <a href="./list.html" class="nav-item" data-translate="menuList">Lista</a>
+      <a href="./offers.html" class="nav-item" data-translate="menuDeals">Ofertas</a>
+    </nav>
+    <div class="cart-container">
+      <button id="cart-button" class="cart-icon">
+        🛒 <span id="cart-count">0</span>
+      </button>
+      <div id="cart-dropdown" class="cart-dropdown hidden">
+        <ul id="cart-items"></ul>
+        <button id="checkout-button" class="checkout-button" data-translate="checkoutButton">
+          Proceed to Checkout
+        </button>
+      </div>
+    </div>
+    <button id="language-toggle" class="language">EN</button>
+  </header>
+
+  <!-- Lista de productos ordenados -->
+  <main>
+    <h1 class="main-title" data-translate="sectionTitle">Special Offers</h1>
+
+    <section class="product-grid">
+      <div class="product-card" data-id="19" data-price="80">
+        <div class="discount-badge">20% OFF</div>
+        <img src="/ecommerce_task2/assets/17320160676293.jpg" alt="Product 1">
+        <h3>Product 19</h3>
+        <p class="product-price">$80.00 <del>$100.00</del></p>
+        <button data-id="1" class="add-to-cart" data-translate="addToCart">Add to Cart</button>
+      </div>
+  
+      <div class="product-card" data-id="20" data-price="70">
+        <div class="discount-badge">30% OFF</div>
+        <img src="/ecommerce_task2/assets/4.jpg" alt="Product 2">
+        <h3>Product 20</h3>
+        <p class="product-price">$70.00 <del>$100.00</del></p>
+        <button data-id="2" class="add-to-cart" data-translate="addToCart">Add to Cart</button>
+      </div>
+  
+      <div class="product-card" data-id="21" data-price="85">
+        <div class="discount-badge">15% OFF</div>
+        <img src="/ecommerce_task2/assets/diet-coke.webp" alt="Product 3">
+        <h3>Product 21</h3>
+        <p class="product-price">$85.00 <del>$100.00</del></p>
+        <button data-id="3" class="add-to-cart" data-translate="addToCart">Add to Cart</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p data-translate="footerText">Contact us, we are available nationwide.</p>
+  </footer>
+
+  <script src="/ecommerce_task2/main.js"></script>
+</body>
+</html>
